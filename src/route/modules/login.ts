@@ -1,6 +1,6 @@
-import { Route } from '../types'
+import { RouteConfig } from 'vue-router'
 
-export const loginRoute: Route = {
+export const loginRoute: RouteConfig = {
   path: '/login',
   name: 'login',
   component: () =>

@@ -5,6 +5,6 @@ import { homeRoute } from './modules/home'
 
 Vue.use(Router)
 
-export default new Router({
+export const router = new Router({
   routes: [loginRoute, homeRoute]
 })
