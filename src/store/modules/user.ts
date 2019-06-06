@@ -1,19 +1,52 @@
 interface State {
-  info: Object
-  auth: Object
+  user: User
+  auth: Auth
+}
+
+interface User {
+  id: number
+  username: string
+  password: string
+  isLogin: boolean
+}
+
+interface Auth {
+  token: string
 }
 
 let state: State = {
-  info: {
-    data: {}
+  user: {
+    id: 0,
+    username: '',
+    password: '',
+    isLogin: false
   },
-  auth: {}
+  auth: {
+    token: ''
+  }
 }
 
-const mutations = {}
+interface UserData {
+  id: number
+  username: string
+  password: string
+  isLogin: boolean
+  token: string
+}
+
+const mutations = {
+  setUserData(state: State, userData: UserData) {
+    state.user.id = userData.id
+    state.user.username = userData.username
+    state.user.password = userData.password
+    state.user.isLogin = true
+    state.auth.token = userData.token
+  }
+}
 
 const getters = {
-  info: (state: State) => state.info
+  info: (state: State) => state.user,
+  token: (state: State) => state.auth.token
 }
 
 export const userStore = {

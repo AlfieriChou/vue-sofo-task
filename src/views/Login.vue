@@ -63,6 +63,16 @@ export default class Login extends Vue {
       params
     )
     if (res.status === 200) {
+      this.$store.commit({
+        type: 'setUserData',
+        userData: {
+          id: res.data.user.id,
+          username: res.data.user.username,
+          password: res.data.user.password,
+          isLogin: true,
+          token: res.data.token
+        }
+      })
       this.$router.replace({ name: 'home' })
     }
   }
