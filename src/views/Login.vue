@@ -58,7 +58,10 @@ export default class Login extends Vue {
       username: this.$data.username,
       password: this.$data.password
     }
-    const res = await this.$axios.post('http://127.0.0.1:4000/v1/login', params)
+    const res = await this.$axios.post(
+      this.$config.baseUrl + '/v1/login',
+      params
+    )
     if (res.status === 200) {
       this.$router.replace({ name: 'home' })
     }

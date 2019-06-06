@@ -5,6 +5,7 @@ import { store } from './store'
 import 'element-ui/lib/theme-chalk/index.css'
 import { Table, TableColumn, Col, Row, Button, Checkbox } from 'element-ui'
 import axios from 'axios'
+import { config } from './config'
 
 Vue.use(Table)
 Vue.use(TableColumn)
@@ -15,6 +16,7 @@ Vue.use(Checkbox)
 
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
+Vue.prototype.$config = config
 
 new Vue({
   router,
