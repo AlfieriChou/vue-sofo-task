@@ -14,6 +14,7 @@ Vue.use(Button)
 Vue.use(Checkbox)
 
 Vue.config.productionTip = false
+Vue.prototype.$axios = axios
 
 new Vue({
   router,

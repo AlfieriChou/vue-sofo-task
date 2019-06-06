@@ -5,7 +5,7 @@ interface State {
 
 let state: State = {
   info: {
-    data: 'store data from user'
+    data: {}
   },
   auth: {}
 }
