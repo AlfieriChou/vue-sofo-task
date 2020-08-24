@@ -38,7 +38,7 @@
     "less-loader": "^4.1.0",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.11.0",
-    "standard-version": "^6.0.1",
+    "standard-version": "^8.0.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.4.3",
