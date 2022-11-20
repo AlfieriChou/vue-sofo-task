@@ -34,7 +34,7 @@
     "commitizen": "^3.1.1",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^2.3.0",
-    "less": "^3.0.4",
+    "less": "^4.0.0",
     "less-loader": "^4.1.0",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.11.0",
